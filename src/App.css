@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #363636; */
+}
+.login-main-div{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.todo-img{
+  width: 700px;
+  height: 700px;
+}
+.login-child-one{
+  background-color: aliceblue;
+}
+.login-child-two{
+ display: flex;
+ flex-direction: column;
+ background-color: aliceblue;
+}
+
+.vector-icon{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+/* -------------Responsive -------------------*/
+@media (max-width: 1440px) {
+ 
+}
