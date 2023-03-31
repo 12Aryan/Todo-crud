@@ -13,6 +13,10 @@ const Signuppage = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     let userArr=[]
+    if(localStorage.getItem("user")){
+      userArr.push(JSON.parse(localStorage.getItem("user")));
+    }
+
     userArr.push(input)
     localStorage.setItem("user", JSON.stringify(userArr));
     console.log(userArr);
@@ -70,7 +74,7 @@ const Signuppage = () => {
               name="password"
               value={input.password}
               onChange={(e) => {
-            
+                console.log(e.target.value);
                 setInput({
                   ...input,
                   [e.target.name]: e.target.value,
